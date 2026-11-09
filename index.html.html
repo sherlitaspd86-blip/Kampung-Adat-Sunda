@@ -60,14 +60,6 @@
             display: block;
             width: 0;
         }
-        /* Animations */
-        @keyframes bounce-slow {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-        }
-        .animate-bounce-slow {
-            animation: bounce-slow 3s infinite ease-in-out;
-        }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
@@ -135,7 +127,7 @@
             </div>
         </div>
 
-        <!-- FOOTER / PROGRESS BAR & ACTION CONTROLS -->
+        <!-- FOOTER / PROGRESS BAR -->
         <footer id="hud-bottom" class="w-full max-w-4xl mx-auto flex flex-col items-center gap-3 opacity-0 transition-opacity duration-500">
             <!-- Progress Steps -->
             <div class="w-full glass-panel p-3 rounded-2xl pointer-events-auto flex items-center justify-between gap-2 shadow-xl">
@@ -1193,7 +1185,6 @@
             const score = gameState.score;
             let title = "";
             let badgeIcon = "";
-            let badgeColorClass = "";
 
             if (score >= 900) {
                 title = "DUTA BUDAYA SUNDA";
@@ -1254,7 +1245,7 @@
                     <title>Sertifikat Pencapaian - Kampung Adat Naga</title>
                     <style>
                         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 40px; background: #f8fafc; }
-                        .cert { border: 10px double #059669; padding: 40px; background: white; max-w: 800px; margin: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+                        .cert { border: 10px double #059669; padding: 40px; background: white; max-width: 800px; margin: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
                         h1 { color: #047857; font-size: 32px; margin-bottom: 5px; }
                         h2 { color: #1e293b; font-size: 24px; margin-top: 20px; }
                         .badge { font-size: 20px; color: #d97706; font-weight: bold; margin: 15px 0; }
